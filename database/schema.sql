@@ -3,8 +3,10 @@ USE gesfin;
 
 CREATE TABLE users (
   id INT AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(100) NULL,
   username VARCHAR(100) NOT NULL UNIQUE,
   password_hash VARCHAR(255) NOT NULL,
+  profile_pic VARCHAR(255) NULL,
   created_at DATETIME NOT NULL,
   updated_at DATETIME NOT NULL
 );

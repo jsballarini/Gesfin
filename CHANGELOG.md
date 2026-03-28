@@ -10,12 +10,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [1.1.0] - 2026-03-28
 
 ### Added
+- Modal de Gestão de Perfil acessível via header, permitindo edição de nome, login, senha e foto de perfil.
+- Colunas `name` e `profile_pic` adicionadas à tabela `users`.
+- `ProfileController` criado para processar as requisições de atualização de perfil e upload de imagens.
 - Gráfico interativo de projeção financeira (12 meses) no Dashboard, exibindo saldos Previsto vs. Realizado.
 - Método `getChartData` no `DashboardRepository` para agregar os dados mês a mês.
 - Integração da biblioteca ApexCharts via CDN para renderização dos gráficos na view do Dashboard.
 - Arquivos de documentação técnica: `ARCHITECTURE.md` e `CHANGELOG.md`.
 
 ### Changed
+- Atualização do `UserRepository` para suportar `update()` e `findById()`.
+- Modificação no `AuthController` para armazenar os dados atualizados do usuário na sessão.
+- Ajuste de `z-index` no Modal de Perfil para sobrepor o gráfico ApexCharts.
 - Atualização do `README.md` com instruções e descrições mais detalhadas do projeto.
 - Atualização do `DashboardController` para processar e enviar os dados dinâmicos do gráfico para a View.
 

@@ -5,6 +5,7 @@ Este é o repositório do **App Financeiro Simples (Gesfin)**, um MVP focado no 
 ## Principais Funcionalidades
 
 - **Dashboard Financeiro**: Visão geral de receitas, despesas e saldo mensal. Inclui gráfico interativo de 12 meses (Previsto vs. Realizado).
+- **Gestão de Perfil**: Modal para atualização de informações do usuário, incluindo foto de perfil, nome, login e senha.
 - **Gestão de Categorias**: Organização de entradas e saídas.
 - **Lançamentos**: Registro de transações financeiras com status de pagamento (Pendente/Pago).
 - **Recorrência**: Suporte a lançamentos recorrentes.

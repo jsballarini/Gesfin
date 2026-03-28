@@ -15,6 +15,9 @@ return [
     'POST|/categories/store' => ['CategoryController', 'store'],
     'POST|/categories/update' => ['CategoryController', 'update'],
 
+    // Perfil
+    'POST|/profile/update' => ['ProfileController', 'update'],
+
     // Lançamentos
     'GET|/entries' => ['EntryController', 'index'],
     'POST|/entries/store' => ['EntryController', 'store'],

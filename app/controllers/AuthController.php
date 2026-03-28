@@ -30,6 +30,8 @@ class AuthController {
             session_regenerate_id(true); // Previne Session Fixation
             $_SESSION['user_id'] = $user['id'];
             $_SESSION['username'] = $user['username'];
+            $_SESSION['user_name'] = $user['name'] ?? null;
+            $_SESSION['profile_pic'] = $user['profile_pic'] ?? null;
             
             header('Location: /dashboard');
             exit;
